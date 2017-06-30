@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="Resources/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body onload="fetchBookmarks()">
+    <div class="container">
+        <h3 class="text-muted" id="title">Bookmarker</h3>
+        <h2 class="text-center" id="secondary_heading">Bookmark Your Favourite Sites</h2>
+        <div class="text-center" id="handler">
+            <form action="JavaScript:void(0)" onsubmit="addItem('name','url');" id="bookmarker_main_form">
+                <table class="table">
+                    <tr>
+                        <td class="col-md-2">
+                            <h5>Site Name</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-12">
+                            <input type="text" id="name" placeholder="Website Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-2">
+                            <h5>Site URL</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-8">
+                            <input type="text" placeholder="Website URL" id="url" /><br /><br />
+                        </td>
+                    </tr>
+
+                </table>
+                <button class="btn btn-info btn-lg">Submit</button>
+            </form>
+        </div>
+        <table class="table" id="bookmarks"></table>
+        <div id="footer">
+            <p class="text-muted">&copy; 2017 Bookmarker, Inc</p>
+        </div>
+    </div>
+    <script src="Resources/scripts.js"></script>
+</body>
+
+</html>

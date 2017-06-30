@@ -1,0 +1,21 @@
+#title {
+    margin-bottom: 60px;
+}
+
+h5 {
+    font-weight: 600 !important;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+#secondary_heading {
+    margin-bottom: 20px;
+}
+
+#handler {
+    width: 80%;
+    margin: 0px auto 0px auto;
+}
